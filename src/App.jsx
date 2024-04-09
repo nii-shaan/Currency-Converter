@@ -1,4 +1,4 @@
-
+import Field from './Field'
 
 
 function App(){
@@ -7,13 +7,25 @@ function App(){
   return (
     <>
 
-    <h1 className="bg-slate-500">setup</h1>
+    <div className="h-screen bg-slate-900 flex items-center justify-center">
+
+    <Field/>
+
+    </div>
+
     
+
+
+
+
+
+
+
+
+
     
     </>
   )
-
-
-}
+};
 
 export default App;
