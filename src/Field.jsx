@@ -1,3 +1,5 @@
+import NativeSelect from "@mui/material/NativeSelect";
+
 export default function Field({
   label,
   amount,
@@ -7,9 +9,6 @@ export default function Field({
   onSelectedCurrencyChanged,
   disabled = false,
 }) {
-
-
-  
   return (
     <>
       <div className="bg-fieldOne w-[400px] h-[100px] rounded-lg p-[5px]">
@@ -28,10 +27,7 @@ export default function Field({
             onChange={(e) => onAmountChange(Number(e.target.value))}
           />
 
-          <select
-            name=""
-            id=""
-            className="mr-[20px] px-[10px] py-[5px] rounded-lg "
+          <NativeSelect
             value={selectectedCurrency}
             onChange={(e) => onSelectedCurrencyChanged(e.target.value)}
           >
@@ -40,7 +36,7 @@ export default function Field({
                 {item}
               </option>
             ))}
-          </select>
+          </NativeSelect>
         </div>
       </div>
     </>
